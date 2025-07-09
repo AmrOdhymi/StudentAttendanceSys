@@ -80,6 +80,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Data\" />
     <Folder Include="Forms\AdminForm\AdminDashboardForm\DepartmentManagement\AddDepartmentForm\" />
     <Folder Include="Forms\AdminForm\AdminDashboardForm\DepartmentManagement\DepartmentManagementForm\" />
     <Folder Include="Forms\AdminForm\AdminDashboardForm\DepartmentManagement\EditDepartmentForm\" />
@@ -94,6 +95,8 @@
     <Folder Include="Forms\AdminForm\AdminDashboardForm\SubjectManagement\SubjectManagementForm\" />
     <Folder Include="Forms\FacultyForm\AttendanceForms\" />
     <Folder Include="Forms\FacultyForm\FacultyDashboardForms\" />
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
