@@ -66,6 +66,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Database\Backup\StudentAttendanceDB.bak" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -80,7 +81,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
     <Folder Include="Forms\AdminForm\AdminDashboardForm\DepartmentManagement\AddDepartmentForm\" />
     <Folder Include="Forms\AdminForm\AdminDashboardForm\DepartmentManagement\DepartmentManagementForm\" />
     <Folder Include="Forms\AdminForm\AdminDashboardForm\DepartmentManagement\EditDepartmentForm\" />
@@ -95,8 +95,12 @@
     <Folder Include="Forms\AdminForm\AdminDashboardForm\SubjectManagement\SubjectManagementForm\" />
     <Folder Include="Forms\FacultyForm\AttendanceForms\" />
     <Folder Include="Forms\FacultyForm\FacultyDashboardForms\" />
-    <Folder Include="Models\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataAccess\notes.txt" />
+    <Content Include="Database\Script\script.sql" />
+    <Content Include="Models\notes.txt" />
+    <Content Include="Services\notes.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
