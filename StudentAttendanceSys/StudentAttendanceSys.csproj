@@ -80,25 +80,25 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\AdminForm\AdminDashboardForm\DepartmentManagement\AddDepartmentForm\" />
-    <Folder Include="Forms\AdminForm\AdminDashboardForm\DepartmentManagement\DepartmentManagementForm\" />
-    <Folder Include="Forms\AdminForm\AdminDashboardForm\DepartmentManagement\EditDepartmentForm\" />
-    <Folder Include="Forms\AdminForm\AdminDashboardForm\FacultyManagement\AddFacultyForm\" />
-    <Folder Include="Forms\AdminForm\AdminDashboardForm\FacultyManagement\EditFacultyForm\" />
-    <Folder Include="Forms\AdminForm\AdminDashboardForm\FacultyManagement\FaclutyManagementForm\" />
-    <Folder Include="Forms\AdminForm\AdminDashboardForm\StudentManagement\AddStudentForm\" />
-    <Folder Include="Forms\AdminForm\AdminDashboardForm\StudentManagement\EditStudentForm\" />
-    <Folder Include="Forms\AdminForm\AdminDashboardForm\StudentManagement\StudentManagementForm\" />
-    <Folder Include="Forms\AdminForm\AdminDashboardForm\SubjectManagement\AddSubjectForm\" />
-    <Folder Include="Forms\AdminForm\AdminDashboardForm\SubjectManagement\EditSubjectForm\" />
-    <Folder Include="Forms\AdminForm\AdminDashboardForm\SubjectManagement\SubjectManagementForm\" />
-    <Folder Include="Forms\FacultyForm\AttendanceForms\" />
-    <Folder Include="Forms\FacultyForm\FacultyDashboardForms\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="DataAccess\notes.txt" />
     <Content Include="Database\Script\script.sql" />
+    <Content Include="Forms\AdminForm\AdminDashboardForm\DepartmentManagement\AddDepartmentForm\notes.txt" />
+    <Content Include="Forms\AdminForm\AdminDashboardForm\DepartmentManagement\DepartmentManagementForm\notes.txt" />
+    <Content Include="Forms\AdminForm\AdminDashboardForm\DepartmentManagement\EditDepartmentForm\notes.txt" />
+    <Content Include="Forms\AdminForm\AdminDashboardForm\FacultyManagement\AddFacultyForm\notes.txt" />
+    <Content Include="Forms\AdminForm\AdminDashboardForm\FacultyManagement\EditFacultyForm\notes.txt" />
+    <Content Include="Forms\AdminForm\AdminDashboardForm\FacultyManagement\FaclutyManagementForm\notes.txt" />
+    <Content Include="Forms\AdminForm\AdminDashboardForm\StudentManagement\AddStudentForm\notes.txt" />
+    <Content Include="Forms\AdminForm\AdminDashboardForm\StudentManagement\EditStudentForm\notes.txt" />
+    <Content Include="Forms\AdminForm\AdminDashboardForm\StudentManagement\StudentManagementForm\notes.txt" />
+    <Content Include="Forms\AdminForm\AdminDashboardForm\SubjectManagement\AddSubjectForm\notes.txt" />
+    <Content Include="Forms\AdminForm\AdminDashboardForm\SubjectManagement\EditSubjectForm\notes.txt" />
+    <Content Include="Forms\AdminForm\AdminDashboardForm\SubjectManagement\SubjectManagementForm\notes.txt" />
+    <Content Include="Forms\FacultyForm\AttendanceForms\notes.txt" />
+    <Content Include="Forms\FacultyForm\FacultyDashboardForms\notes.txt" />
+    <Content Include="Forms\LoginForm\notes.txt" />
     <Content Include="Models\notes.txt" />
     <Content Include="Services\notes.txt" />
   </ItemGroup>
