@@ -17,7 +17,9 @@ namespace StudentAttendanceSys.DataAccess
         public DbConnectionManager()
         {
             //اسم السرفر ثم اسم قاعدة البيانات ثم طريقة الدخول الى السرفر
-            sqlConnection = new SqlConnection(@"Server=Arise; Database=StudentAttendanceDB;Integrated Security=true");
+            //Arise
+            //DESKTOP-46062MH
+            sqlConnection = new SqlConnection(@"Server=DESKTOP-46062MH; Database=StudentAttendanceDB;Integrated Security=true");
         }
 
         // open database Connection
