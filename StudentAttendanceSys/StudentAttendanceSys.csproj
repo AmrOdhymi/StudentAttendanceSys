@@ -54,6 +54,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\ExitService.cs" />
+    <Compile Include="Utils\ValidationService.cs" />
     <EmbeddedResource Include="Forms\LoginForm\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,6 +67,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Database\Backup\StudentAttendanceDB.bak" />
     <None Include="Properties\Settings.settings">
@@ -100,6 +103,9 @@
     <Content Include="Forms\FacultyForm\FacultyDashboardForms\notes.txt" />
     <Content Include="Forms\LoginForm\notes.txt" />
     <Content Include="Models\notes.txt" />
+    <None Include="Resources\userName.png" />
+    <None Include="Resources\password.png" />
+    <None Include="Resources\visibility_off.png" />
     <Content Include="Services\notes.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
