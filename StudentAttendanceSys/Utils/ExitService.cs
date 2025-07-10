@@ -20,3 +20,4 @@ namespace StudentAttendanceSys.Utils
         }
     }
 }
+//رسالة تاكيد الخروج مشتركه بين الواجهات

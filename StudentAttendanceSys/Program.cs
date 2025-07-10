@@ -4,6 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentAttendanceSys.Forms.LoginForm;
+using StudentAttendanceSys.Forms.AdminForms.AdminDashboard;
+using StudentAttendanceSys.Forms.FacultyForm.FacultyMainMenue;
+using StudentAttendanceSys.Models;
 
 namespace StudentAttendanceSys
 {
@@ -17,7 +20,24 @@ namespace StudentAttendanceSys
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+
+
+            Login login = new Login();
+            DialogResult result = login.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+
+                if (CurrentUser.User_Type == "Doctor")
+                {
+                    Application.Run(new FacultyMainMenueForm());
+                }
+                else if (CurrentUser.User_Type == "Admin")
+                {
+                    Application.Run(new AdminDashboardForm());
+                }
+
+            }
         }
     }
 }

@@ -17,7 +17,7 @@ namespace StudentAttendanceSys.DataAccess
         public DbConnectionManager()
         {
             //اسم السرفر ثم اسم قاعدة البيانات ثم طريقة الدخول الى السرفر
-            sqlConnection = new SqlConnection(@"Servre=.\SQLEXPRESS; Database=StudentAttendanceDB;Integrated Security=true");
+            sqlConnection = new SqlConnection(@"Server=Arise; Database=StudentAttendanceDB;Integrated Security=true");
         }
 
         // open database Connection
@@ -32,6 +32,12 @@ namespace StudentAttendanceSys.DataAccess
         {
             if (sqlConnection.State == ConnectionState.Open)
                 sqlConnection.Close();
+        }
+
+
+        public SqlConnection GetConnection()
+        {
+            return sqlConnection;
         }
     }
 }
