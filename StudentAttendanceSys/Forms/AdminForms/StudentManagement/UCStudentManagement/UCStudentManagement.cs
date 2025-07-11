@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentAttendanceSys.DataAccess;
+using StudentAttendanceSys.Forms.AdminForms.StudentManagement.AddStudentForm;
+using StudentAttendanceSys.Forms.AdminForms.StudentManagement.EditStudentForm;
 
 namespace StudentAttendanceSys.Forms.AdminForms.StudentManagement.UCStudentManagement
 {
@@ -23,7 +25,24 @@ namespace StudentAttendanceSys.Forms.AdminForms.StudentManagement.UCStudentManag
 
         private void UCStudentManagement_Load(object sender, EventArgs e)
         {
+
         }
 
+        private void addNewStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addStudentForm addStudentForm = new addStudentForm();
+            addStudentForm.ShowDialog();
+        }
+
+        private void editCurrentStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            editStudentForm editStudentForm = new editStudentForm();
+            editStudentForm.ShowDialog();
+        }
+
+        private void deleteCurrentStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //:) خلاص تعبت هنا الباقي بكره
+        }
     }
 }

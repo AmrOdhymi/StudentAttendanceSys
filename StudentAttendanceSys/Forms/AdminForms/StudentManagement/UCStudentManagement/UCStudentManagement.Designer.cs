@@ -28,16 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dataGridViewStudents = new System.Windows.Forms.DataGridView();
+            this.studentContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.addNewStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editCurrentStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteCurrentStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.listBoxViewDepartments = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudents)).BeginInit();
+            this.studentContextMenuStrip.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -46,12 +51,44 @@
             // dataGridViewStudents
             // 
             this.dataGridViewStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewStudents.ContextMenuStrip = this.studentContextMenuStrip;
             this.dataGridViewStudents.Location = new System.Drawing.Point(0, 93);
             this.dataGridViewStudents.Name = "dataGridViewStudents";
             this.dataGridViewStudents.RowHeadersWidth = 51;
             this.dataGridViewStudents.RowTemplate.Height = 24;
             this.dataGridViewStudents.Size = new System.Drawing.Size(792, 357);
             this.dataGridViewStudents.TabIndex = 1;
+            // 
+            // studentContextMenuStrip
+            // 
+            this.studentContextMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.studentContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addNewStudentToolStripMenuItem,
+            this.editCurrentStudentToolStripMenuItem,
+            this.deleteCurrentStudentToolStripMenuItem});
+            this.studentContextMenuStrip.Name = "studentContextMenuStrip";
+            this.studentContextMenuStrip.Size = new System.Drawing.Size(230, 104);
+            // 
+            // addNewStudentToolStripMenuItem
+            // 
+            this.addNewStudentToolStripMenuItem.Name = "addNewStudentToolStripMenuItem";
+            this.addNewStudentToolStripMenuItem.Size = new System.Drawing.Size(229, 24);
+            this.addNewStudentToolStripMenuItem.Text = "Add New Student";
+            this.addNewStudentToolStripMenuItem.Click += new System.EventHandler(this.addNewStudentToolStripMenuItem_Click);
+            // 
+            // editCurrentStudentToolStripMenuItem
+            // 
+            this.editCurrentStudentToolStripMenuItem.Name = "editCurrentStudentToolStripMenuItem";
+            this.editCurrentStudentToolStripMenuItem.Size = new System.Drawing.Size(229, 24);
+            this.editCurrentStudentToolStripMenuItem.Text = "Edit Current Student";
+            this.editCurrentStudentToolStripMenuItem.Click += new System.EventHandler(this.editCurrentStudentToolStripMenuItem_Click);
+            // 
+            // deleteCurrentStudentToolStripMenuItem
+            // 
+            this.deleteCurrentStudentToolStripMenuItem.Name = "deleteCurrentStudentToolStripMenuItem";
+            this.deleteCurrentStudentToolStripMenuItem.Size = new System.Drawing.Size(229, 24);
+            this.deleteCurrentStudentToolStripMenuItem.Text = "Delete Current Student";
+            this.deleteCurrentStudentToolStripMenuItem.Click += new System.EventHandler(this.deleteCurrentStudentToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -140,6 +177,7 @@
             this.Size = new System.Drawing.Size(792, 453);
             this.Load += new System.EventHandler(this.UCStudentManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudents)).EndInit();
+            this.studentContextMenuStrip.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -155,10 +193,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.ListBox listBoxViewDepartments;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ContextMenuStrip studentContextMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem addNewStudentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editCurrentStudentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteCurrentStudentToolStripMenuItem;
     }
 }
