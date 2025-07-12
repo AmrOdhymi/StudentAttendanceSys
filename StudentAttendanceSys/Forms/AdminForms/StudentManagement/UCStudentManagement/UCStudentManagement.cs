@@ -30,7 +30,7 @@ namespace StudentAttendanceSys.Forms.AdminForms.StudentManagement.UCStudentManag
 
         private void addNewStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            addStudentForm addStudentForm = new addStudentForm();
+            AddStudentForm.addStudentForm addStudentForm = new addStudentForm();
             addStudentForm.ShowDialog();
         }
 
@@ -42,7 +42,20 @@ namespace StudentAttendanceSys.Forms.AdminForms.StudentManagement.UCStudentManag
 
         private void deleteCurrentStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //:) خلاص تعبت هنا الباقي بكره
+            string studentName = "يوسف";
+            string studentId = "1234";
+            DialogResult deleteResult = MessageBox.Show("\nهل انت متاكد من حذف الطالب" + "\n"+ studentName + "\nالذي رقمه الجامعي" + "\n"+ studentId ,
+                "تنبيه",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning,
+                MessageBoxDefaultButton.Button2,
+                MessageBoxOptions.RightAlign
+                );
+
+            if (deleteResult == DialogResult.Yes)
+            {
+                // نحذف من قواعد البيانات
+            }
         }
     }
 }

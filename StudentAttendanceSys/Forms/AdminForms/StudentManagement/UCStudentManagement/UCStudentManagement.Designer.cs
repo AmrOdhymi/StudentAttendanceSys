@@ -52,7 +52,7 @@
             // 
             this.dataGridViewStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewStudents.ContextMenuStrip = this.studentContextMenuStrip;
-            this.dataGridViewStudents.Location = new System.Drawing.Point(0, 93);
+            this.dataGridViewStudents.Location = new System.Drawing.Point(0, 96);
             this.dataGridViewStudents.Name = "dataGridViewStudents";
             this.dataGridViewStudents.RowHeadersWidth = 51;
             this.dataGridViewStudents.RowTemplate.Height = 24;
@@ -67,7 +67,7 @@
             this.editCurrentStudentToolStripMenuItem,
             this.deleteCurrentStudentToolStripMenuItem});
             this.studentContextMenuStrip.Name = "studentContextMenuStrip";
-            this.studentContextMenuStrip.Size = new System.Drawing.Size(230, 104);
+            this.studentContextMenuStrip.Size = new System.Drawing.Size(230, 76);
             // 
             // addNewStudentToolStripMenuItem
             // 

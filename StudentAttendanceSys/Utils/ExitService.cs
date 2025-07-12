@@ -15,7 +15,9 @@ namespace StudentAttendanceSys.Utils
                 "تحذير",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question,
-                MessageBoxDefaultButton.Button2);
+                MessageBoxDefaultButton.Button2,
+                MessageBoxOptions.RightAlign
+                );
             return r == DialogResult.Yes;
         }
     }

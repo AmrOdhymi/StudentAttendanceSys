@@ -16,5 +16,10 @@ namespace StudentAttendanceSys.Forms.AdminForms.StudentManagement.EditStudentFor
         {
             InitializeComponent();
         }
+
+        private void editStudentBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

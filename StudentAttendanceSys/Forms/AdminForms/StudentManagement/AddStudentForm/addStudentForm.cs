@@ -17,5 +17,10 @@ namespace StudentAttendanceSys.Forms.AdminForms.StudentManagement.AddStudentForm
             InitializeComponent();
             //بالنسبه لتاريخ اضافة طالب يتم اخذه من الجهاز تلقائي
         }
+
+        private void addStudentBtn_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

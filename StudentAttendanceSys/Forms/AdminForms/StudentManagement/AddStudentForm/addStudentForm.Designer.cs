@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -148,10 +148,11 @@
             // 
             this.addStudentBtn.Location = new System.Drawing.Point(12, 306);
             this.addStudentBtn.Name = "addStudentBtn";
-            this.addStudentBtn.Size = new System.Drawing.Size(246, 46);
+            this.addStudentBtn.Size = new System.Drawing.Size(249, 46);
             this.addStudentBtn.TabIndex = 3;
             this.addStudentBtn.Text = "Add Student";
             this.addStudentBtn.UseVisualStyleBackColor = true;
+            this.addStudentBtn.Click += new System.EventHandler(this.addStudentBtn_Click);
             // 
             // addStudentForm
             // 
@@ -167,7 +168,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "addStudentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

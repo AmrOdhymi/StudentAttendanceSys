@@ -118,7 +118,7 @@
     <EmbeddedResource Include="Forms\AdminForms\StudentManagement\AddStudentForm\addStudentForm.resx">
       <DependentUpon>addStudentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminForms\StudentManagement\EditStudentForm\EditStudentForm.resx">
+    <EmbeddedResource Include="Forms\AdminForms\StudentManagement\EditStudentForm\editStudentForm.resx">
       <DependentUpon>editStudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\StudentManagement\UCStudentManagement\UCStudentManagement.resx">
