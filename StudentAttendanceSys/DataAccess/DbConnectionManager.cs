@@ -17,9 +17,9 @@ namespace StudentAttendanceSys.DataAccess
         public DbConnectionManager()
         {
             //اسم السرفر ثم اسم قاعدة البيانات ثم طريقة الدخول الى السرفر
-            //Arise
-            //DESKTOP-46062MH
-            sqlConnection = new SqlConnection(@"Server=Arise; Database=StudentAttendanceDB;Integrated Security=true");
+            string connectionString = Environment.GetEnvironmentVariable("student_database_CONNECTION_STRING", EnvironmentVariableTarget.User);
+
+            sqlConnection = new SqlConnection(connectionString);
         }
 
         // open database Connection
