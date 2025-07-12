@@ -83,6 +83,18 @@
     <Compile Include="Forms\AdminForms\StudentManagement\UCStudentManagement\UCStudentManagement.Designer.cs">
       <DependentUpon>UCStudentManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AdminForms\SubjectManagement\AddSubjectForm\addSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\SubjectManagement\AddSubjectForm\addSubjectForm.Designer.cs">
+      <DependentUpon>addSubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminForms\SubjectManagement\EditSubjectForm\editSubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\SubjectManagement\EditSubjectForm\editSubjectForm.Designer.cs">
+      <DependentUpon>editSubjectForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminForms\SubjectManagement\UCSubjectManagement\UCSubjectManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +135,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\StudentManagement\UCStudentManagement\UCStudentManagement.resx">
       <DependentUpon>UCStudentManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\SubjectManagement\AddSubjectForm\addSubjectForm.resx">
+      <DependentUpon>addSubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\SubjectManagement\EditSubjectForm\editSubjectForm.resx">
+      <DependentUpon>editSubjectForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\SubjectManagement\UCSubjectManagement\UCSubjectManagement.resx">
       <DependentUpon>UCSubjectManagement.cs</DependentUpon>
