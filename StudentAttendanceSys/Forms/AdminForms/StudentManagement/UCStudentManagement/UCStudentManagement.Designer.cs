@@ -41,11 +41,22 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.studentDataGridView = new System.Windows.Forms.DataGridView();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.studentSercheBox = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.StudentlistBoxSelect = new System.Windows.Forms.ListBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.studentdateTimePicker = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudents)).BeginInit();
             this.studentContextMenuStrip.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.studentDataGridView)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewStudents
@@ -96,9 +107,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(303, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 20);
+            this.label1.Size = new System.Drawing.Size(185, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "StudentManagement";
+            this.label1.Text = "Student Management";
             // 
             // textBox1
             // 
@@ -112,7 +123,7 @@
             // 
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(391, 26);
+            this.groupBox1.Location = new System.Drawing.Point(391, 29);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.groupBox1.Size = new System.Drawing.Size(361, 64);
@@ -134,7 +145,7 @@
             // 
             this.groupBox2.Controls.Add(this.listBoxViewDepartments);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(216, 26);
+            this.groupBox2.Location = new System.Drawing.Point(216, 29);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.groupBox2.Size = new System.Drawing.Size(169, 64);
@@ -146,7 +157,7 @@
             // 
             this.groupBox3.Controls.Add(this.dateTimePicker1);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(44, 26);
+            this.groupBox3.Location = new System.Drawing.Point(44, 29);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.groupBox3.Size = new System.Drawing.Size(169, 64);
@@ -163,14 +174,91 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(163, 27);
             this.dateTimePicker1.TabIndex = 0;
             // 
+            // studentDataGridView
+            // 
+            this.studentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.studentDataGridView.Location = new System.Drawing.Point(0, 96);
+            this.studentDataGridView.Name = "studentDataGridView";
+            this.studentDataGridView.RowHeadersWidth = 51;
+            this.studentDataGridView.RowTemplate.Height = 24;
+            this.studentDataGridView.Size = new System.Drawing.Size(792, 357);
+            this.studentDataGridView.TabIndex = 1;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.studentSercheBox);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(391, 29);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox4.Size = new System.Drawing.Size(361, 64);
+            this.groupBox4.TabIndex = 4;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "بحث بالاسم او الرقم التعريفي";
+            // 
+            // studentSercheBox
+            // 
+            this.studentSercheBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.studentSercheBox.Location = new System.Drawing.Point(3, 23);
+            this.studentSercheBox.Name = "studentSercheBox";
+            this.studentSercheBox.Size = new System.Drawing.Size(355, 27);
+            this.studentSercheBox.TabIndex = 3;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.StudentlistBoxSelect);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(216, 29);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox5.Size = new System.Drawing.Size(169, 64);
+            this.groupBox5.TabIndex = 5;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "فلتره حسب القسم";
+            // 
+            // StudentlistBoxSelect
+            // 
+            this.StudentlistBoxSelect.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.StudentlistBoxSelect.FormattingEnabled = true;
+            this.StudentlistBoxSelect.ItemHeight = 20;
+            this.StudentlistBoxSelect.Location = new System.Drawing.Point(3, 23);
+            this.StudentlistBoxSelect.Name = "StudentlistBoxSelect";
+            this.StudentlistBoxSelect.Size = new System.Drawing.Size(163, 38);
+            this.StudentlistBoxSelect.TabIndex = 0;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.studentdateTimePicker);
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Location = new System.Drawing.Point(44, 29);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox6.Size = new System.Drawing.Size(169, 64);
+            this.groupBox6.TabIndex = 6;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "فلتره حسب التاريخ";
+            // 
+            // studentdateTimePicker
+            // 
+            this.studentdateTimePicker.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.studentdateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.studentdateTimePicker.Location = new System.Drawing.Point(3, 23);
+            this.studentdateTimePicker.Name = "studentdateTimePicker";
+            this.studentdateTimePicker.Size = new System.Drawing.Size(163, 27);
+            this.studentdateTimePicker.TabIndex = 0;
+            // 
             // UCStudentManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.studentDataGridView);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewStudents);
             this.Name = "UCStudentManagement";
@@ -182,6 +270,11 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.studentDataGridView)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,5 +294,12 @@
         private System.Windows.Forms.ToolStripMenuItem addNewStudentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editCurrentStudentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteCurrentStudentToolStripMenuItem;
+        private System.Windows.Forms.DataGridView studentDataGridView;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox studentSercheBox;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.ListBox StudentlistBoxSelect;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.DateTimePicker studentdateTimePicker;
     }
 }
