@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentAttendanceSys.Forms.AdminForms.FacultyManagement.AddFacultyForm;
+using StudentAttendanceSys.Forms.AdminForms.FacultyManagement.EditFacultyForm;
 
 namespace StudentAttendanceSys.Forms.AdminForms.FacultyManagement.UCFaclutyManagement
 {
@@ -15,6 +17,36 @@ namespace StudentAttendanceSys.Forms.AdminForms.FacultyManagement.UCFaclutyManag
         public UCFacultyManagement()
         {
             InitializeComponent();
+        }
+
+        private void addNewStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            addFacultyForm addFacultyForm = new addFacultyForm();
+            addFacultyForm.ShowDialog();
+        }
+
+        private void editCurrentStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EditFacultyForm.editFacultyForm editFacultyForm = new EditFacultyForm.editFacultyForm();
+            editFacultyForm.ShowDialog();
+        }
+
+        private void deleteCurrentStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string studentName = "محمد";
+            string studentId = "1234";
+            DialogResult deleteResult = MessageBox.Show("\nهل انت متاكد من حذف الدكتور" + "\n" + studentName + "\nID الذي يملك ال " + "\n" + studentId,
+                "تنبيه",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning,
+                MessageBoxDefaultButton.Button2,
+                MessageBoxOptions.RightAlign
+                );
+
+            if (deleteResult == DialogResult.Yes)
+            {
+                // نحذف من قواعد البيانات
+            }
         }
     }
 }

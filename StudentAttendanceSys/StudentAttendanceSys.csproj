@@ -59,6 +59,18 @@
     <Compile Include="Forms\AdminForms\DepartmentManagement\UCDepartmentManagement\UCDepartmentManagement.Designer.cs">
       <DependentUpon>UCDepartmentManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AdminForms\FacultyManagement\AddFacultyForm\addFacultyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\FacultyManagement\AddFacultyForm\addFacultyForm.Designer.cs">
+      <DependentUpon>addFacultyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminForms\FacultyManagement\EditFacultyForm\editFacultyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\FacultyManagement\EditFacultyForm\editFacultyForm.Designer.cs">
+      <DependentUpon>editFacultyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminForms\FacultyManagement\UCFaclutyManagement\UCFacultyManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,6 +141,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\DepartmentManagement\UCDepartmentManagement\UCDepartmentManagement.resx">
       <DependentUpon>UCDepartmentManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\FacultyManagement\AddFacultyForm\addFacultyForm.resx">
+      <DependentUpon>addFacultyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\FacultyManagement\EditFacultyForm\editFacultyForm.resx">
+      <DependentUpon>editFacultyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\FacultyManagement\UCFaclutyManagement\UCFacultyManagement.resx">
       <DependentUpon>UCFacultyManagement.cs</DependentUpon>

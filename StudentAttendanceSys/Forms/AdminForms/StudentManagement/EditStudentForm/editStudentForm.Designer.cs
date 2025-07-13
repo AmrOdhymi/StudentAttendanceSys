@@ -33,7 +33,7 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.newDepartmentListBoxSelect = new System.Windows.Forms.ListBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.newEmile = new System.Windows.Forms.TextBox();
+            this.newContact = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.newLastName = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -86,7 +86,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.newEmile);
+            this.groupBox4.Controls.Add(this.newContact);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(12, 131);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
@@ -98,14 +98,14 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "البريد الألكتروني او رقم الهاتف";
             // 
-            // newEmile
+            // newContact
             // 
-            this.newEmile.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.newEmile.Location = new System.Drawing.Point(4, 24);
-            this.newEmile.Margin = new System.Windows.Forms.Padding(4);
-            this.newEmile.Name = "newEmile";
-            this.newEmile.Size = new System.Drawing.Size(241, 27);
-            this.newEmile.TabIndex = 2;
+            this.newContact.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.newContact.Location = new System.Drawing.Point(4, 24);
+            this.newContact.Margin = new System.Windows.Forms.Padding(4);
+            this.newContact.Name = "newContact";
+            this.newContact.Size = new System.Drawing.Size(241, 27);
+            this.newContact.TabIndex = 2;
             // 
             // groupBox2
             // 
@@ -214,7 +214,7 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.ListBox newDepartmentListBoxSelect;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox newEmile;
+        private System.Windows.Forms.TextBox newContact;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox newLastName;
         private System.Windows.Forms.GroupBox groupBox3;
