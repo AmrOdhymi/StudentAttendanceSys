@@ -33,9 +33,9 @@ namespace StudentAttendanceSys.Forms.AdminForms.FacultyManagement.UCFaclutyManag
 
         private void deleteCurrentStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string studentName = "محمد";
-            string studentId = "1234";
-            DialogResult deleteResult = MessageBox.Show("\nهل انت متاكد من حذف الدكتور" + "\n" + studentName + "\nID الذي يملك ال " + "\n" + studentId,
+            string facultyName = "محمد";
+            string facultytId = "1234";
+            DialogResult deleteResult = MessageBox.Show("\nهل انت متاكد من حذف الدكتور" + "\n" + facultyName + "\nID الذي يملك ال " + "\n" + facultytId,
                 "تنبيه",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning,

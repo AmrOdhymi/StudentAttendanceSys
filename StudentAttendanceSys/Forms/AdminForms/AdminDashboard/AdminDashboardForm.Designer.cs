@@ -29,16 +29,15 @@
         private void InitializeComponent()
         {
             this.sideMenu = new System.Windows.Forms.Panel();
-            this.panelContainer = new System.Windows.Forms.Panel();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.mainUC = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
+            this.studentMUCBtn = new System.Windows.Forms.Button();
             this.reportUCBtn = new System.Windows.Forms.Button();
+            this.subjectMUCBtn = new System.Windows.Forms.Button();
             this.departmentMUCBtn = new System.Windows.Forms.Button();
             this.facultyMUCBtn = new System.Windows.Forms.Button();
-            this.subjectMUCBtn = new System.Windows.Forms.Button();
-            this.studentMUCBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.sideMenu.SuspendLayout();
             this.panelContainer.SuspendLayout();
             this.SuspendLayout();
@@ -58,26 +57,6 @@
             this.sideMenu.Name = "sideMenu";
             this.sideMenu.Size = new System.Drawing.Size(190, 453);
             this.sideMenu.TabIndex = 0;
-            // 
-            // panelContainer
-            // 
-            this.panelContainer.BackColor = System.Drawing.Color.White;
-            this.panelContainer.Controls.Add(this.label1);
-            this.panelContainer.Controls.Add(this.statusStrip1);
-            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(0, 0);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(792, 453);
-            this.panelContainer.TabIndex = 1;
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 431);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(792, 22);
-            this.statusStrip1.TabIndex = 0;
-            this.statusStrip1.Text = "statusStrip1";
             // 
             // mainUC
             // 
@@ -103,6 +82,18 @@
             this.exit.UseVisualStyleBackColor = false;
             this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
+            // studentMUCBtn
+            // 
+            this.studentMUCBtn.BackColor = System.Drawing.Color.Gainsboro;
+            this.studentMUCBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentMUCBtn.Location = new System.Drawing.Point(10, 81);
+            this.studentMUCBtn.Name = "studentMUCBtn";
+            this.studentMUCBtn.Size = new System.Drawing.Size(170, 50);
+            this.studentMUCBtn.TabIndex = 1;
+            this.studentMUCBtn.Text = "إدارة الطلاب";
+            this.studentMUCBtn.UseVisualStyleBackColor = false;
+            this.studentMUCBtn.Click += new System.EventHandler(this.studentMUCBtn_Click);
+            // 
             // reportUCBtn
             // 
             this.reportUCBtn.BackColor = System.Drawing.Color.Gainsboro;
@@ -113,6 +104,18 @@
             this.reportUCBtn.TabIndex = 5;
             this.reportUCBtn.Text = "التقارير";
             this.reportUCBtn.UseVisualStyleBackColor = false;
+            // 
+            // subjectMUCBtn
+            // 
+            this.subjectMUCBtn.BackColor = System.Drawing.Color.Gainsboro;
+            this.subjectMUCBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subjectMUCBtn.Location = new System.Drawing.Point(10, 139);
+            this.subjectMUCBtn.Name = "subjectMUCBtn";
+            this.subjectMUCBtn.Size = new System.Drawing.Size(170, 50);
+            this.subjectMUCBtn.TabIndex = 2;
+            this.subjectMUCBtn.Text = "إدارة المواد";
+            this.subjectMUCBtn.UseVisualStyleBackColor = false;
+            this.subjectMUCBtn.Click += new System.EventHandler(this.subjectMUCBtn_Click);
             // 
             // departmentMUCBtn
             // 
@@ -138,37 +141,24 @@
             this.facultyMUCBtn.UseVisualStyleBackColor = false;
             this.facultyMUCBtn.Click += new System.EventHandler(this.facultyMUCBtn_Click);
             // 
-            // subjectMUCBtn
+            // panelContainer
             // 
-            this.subjectMUCBtn.BackColor = System.Drawing.Color.Gainsboro;
-            this.subjectMUCBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subjectMUCBtn.Location = new System.Drawing.Point(10, 139);
-            this.subjectMUCBtn.Name = "subjectMUCBtn";
-            this.subjectMUCBtn.Size = new System.Drawing.Size(170, 50);
-            this.subjectMUCBtn.TabIndex = 2;
-            this.subjectMUCBtn.Text = "إدارة المواد";
-            this.subjectMUCBtn.UseVisualStyleBackColor = false;
-            this.subjectMUCBtn.Click += new System.EventHandler(this.subjectMUCBtn_Click);
+            this.panelContainer.BackColor = System.Drawing.Color.White;
+            this.panelContainer.Controls.Add(this.statusStrip1);
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(0, 0);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(792, 453);
+            this.panelContainer.TabIndex = 1;
             // 
-            // studentMUCBtn
+            // statusStrip1
             // 
-            this.studentMUCBtn.BackColor = System.Drawing.Color.Gainsboro;
-            this.studentMUCBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentMUCBtn.Location = new System.Drawing.Point(10, 81);
-            this.studentMUCBtn.Name = "studentMUCBtn";
-            this.studentMUCBtn.Size = new System.Drawing.Size(170, 50);
-            this.studentMUCBtn.TabIndex = 1;
-            this.studentMUCBtn.Text = "إدارة الطلاب";
-            this.studentMUCBtn.UseVisualStyleBackColor = false;
-            this.studentMUCBtn.Click += new System.EventHandler(this.studentMUCBtn_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(545, 126);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 16);
-            this.label1.TabIndex = 7;
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 431);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(792, 22);
+            this.statusStrip1.TabIndex = 0;
+            this.statusStrip1.Text = "statusStrip1";
             // 
             // AdminDashboardForm
             // 
@@ -202,6 +192,5 @@
         private System.Windows.Forms.Button facultyMUCBtn;
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.Label label1;
     }
 }

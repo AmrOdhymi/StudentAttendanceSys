@@ -33,7 +33,7 @@
             this.facultySercheBox = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.departmentListBoxSelect = new System.Windows.Forms.ListBox();
-            this.studentDataGridView = new System.Windows.Forms.DataGridView();
+            this.facultyDataGridView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.fasultyContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.addNewStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,7 +41,7 @@
             this.deleteCurrentStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.studentDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facultyDataGridView)).BeginInit();
             this.fasultyContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,15 +87,16 @@
             this.departmentListBoxSelect.Size = new System.Drawing.Size(163, 38);
             this.departmentListBoxSelect.TabIndex = 0;
             // 
-            // studentDataGridView
+            // facultyDataGridView
             // 
-            this.studentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.studentDataGridView.Location = new System.Drawing.Point(0, 96);
-            this.studentDataGridView.Name = "studentDataGridView";
-            this.studentDataGridView.RowHeadersWidth = 51;
-            this.studentDataGridView.RowTemplate.Height = 24;
-            this.studentDataGridView.Size = new System.Drawing.Size(792, 357);
-            this.studentDataGridView.TabIndex = 7;
+            this.facultyDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.facultyDataGridView.ContextMenuStrip = this.fasultyContextMenuStrip;
+            this.facultyDataGridView.Location = new System.Drawing.Point(0, 96);
+            this.facultyDataGridView.Name = "facultyDataGridView";
+            this.facultyDataGridView.RowHeadersWidth = 51;
+            this.facultyDataGridView.RowTemplate.Height = 24;
+            this.facultyDataGridView.Size = new System.Drawing.Size(792, 357);
+            this.facultyDataGridView.TabIndex = 7;
             // 
             // label1
             // 
@@ -115,7 +116,7 @@
             this.editCurrentStudentToolStripMenuItem,
             this.deleteCurrentStudentToolStripMenuItem});
             this.fasultyContextMenuStrip.Name = "studentContextMenuStrip";
-            this.fasultyContextMenuStrip.Size = new System.Drawing.Size(223, 104);
+            this.fasultyContextMenuStrip.Size = new System.Drawing.Size(223, 76);
             // 
             // addNewStudentToolStripMenuItem
             // 
@@ -143,9 +144,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ContextMenuStrip = this.fasultyContextMenuStrip;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.studentDataGridView);
+            this.Controls.Add(this.facultyDataGridView);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Name = "UCFacultyManagement";
@@ -153,7 +153,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.studentDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facultyDataGridView)).EndInit();
             this.fasultyContextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -166,7 +166,7 @@
         private System.Windows.Forms.TextBox facultySercheBox;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.ListBox departmentListBoxSelect;
-        private System.Windows.Forms.DataGridView studentDataGridView;
+        private System.Windows.Forms.DataGridView facultyDataGridView;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ContextMenuStrip fasultyContextMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem addNewStudentToolStripMenuItem;

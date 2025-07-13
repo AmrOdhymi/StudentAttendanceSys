@@ -100,6 +100,7 @@
             // SubjectDataGridView
             // 
             this.SubjectDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SubjectDataGridView.ContextMenuStrip = this.subjectContextMenuStrip;
             this.SubjectDataGridView.Location = new System.Drawing.Point(0, 96);
             this.SubjectDataGridView.Name = "SubjectDataGridView";
             this.SubjectDataGridView.RowHeadersWidth = 51;
@@ -115,7 +116,7 @@
             this.editCurrentStudentToolStripMenuItem,
             this.deleteCurrentStudentToolStripMenuItem});
             this.subjectContextMenuStrip.Name = "studentContextMenuStrip";
-            this.subjectContextMenuStrip.Size = new System.Drawing.Size(228, 104);
+            this.subjectContextMenuStrip.Size = new System.Drawing.Size(228, 76);
             // 
             // addNewStudentToolStripMenuItem
             // 
@@ -143,7 +144,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ContextMenuStrip = this.subjectContextMenuStrip;
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.SubjectDataGridView);

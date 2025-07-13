@@ -53,6 +53,18 @@
     <Compile Include="Forms\AdminForms\AdminDashboard\AdminDashboardForm.Designer.cs">
       <DependentUpon>AdminDashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AdminForms\DepartmentManagement\AddDepartmentForm\addDepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\DepartmentManagement\AddDepartmentForm\addDepartmentForm.Designer.cs">
+      <DependentUpon>addDepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminForms\DepartmentManagement\EditDepartmentForm\editDepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\DepartmentManagement\EditDepartmentForm\editDepartmentForm.Designer.cs">
+      <DependentUpon>editDepartmentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminForms\DepartmentManagement\UCDepartmentManagement\UCDepartmentManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -138,6 +150,12 @@
     <Compile Include="Utils\ValidationService.cs" />
     <EmbeddedResource Include="Forms\AdminForms\AdminDashboard\AdminDashboardForm.resx">
       <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\DepartmentManagement\AddDepartmentForm\addDepartmentForm.resx">
+      <DependentUpon>addDepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\DepartmentManagement\EditDepartmentForm\editDepartmentForm.resx">
+      <DependentUpon>editDepartmentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\DepartmentManagement\UCDepartmentManagement\UCDepartmentManagement.resx">
       <DependentUpon>UCDepartmentManagement.cs</DependentUpon>
