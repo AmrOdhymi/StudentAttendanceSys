@@ -208,6 +208,7 @@
     <None Include="Resources\userName.png" />
     <None Include="Resources\password.png" />
     <None Include="Resources\visibility_off.png" />
+    <None Include="Resources\visibility.png" />
     <Content Include="Services\notes.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
