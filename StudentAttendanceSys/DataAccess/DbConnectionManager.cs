@@ -11,6 +11,8 @@ namespace StudentAttendanceSys.DataAccess
     public class DbConnectionManager
     {
         SqlConnection sqlConnection;
+        SqlCommand command;
+        SqlDataReader reader;
 
 
         //database Connection
@@ -40,6 +42,31 @@ namespace StudentAttendanceSys.DataAccess
         public SqlConnection GetConnection()
         {
             return sqlConnection;
+        }
+
+        //============= experemntal code don't use ---- كود للتجربة لا تستخدم ======== // 
+
+        // this function is for excetuting insertions and editing into the database 
+        // NOTE: it's not for selecting (for select use ExecuteReader) 
+        public void ExecuteNonQuery(string sql, params SqlParameter[] parameters)
+        {
+            command = new SqlCommand(sql, sqlConnection);
+
+            command.Parameters.AddRange(parameters);
+            sqlConnection.Open();
+            command.ExecuteNonQuery();
+
+        }
+        // this function is for reading or selecting form the database 
+        public T ExecuteReader<T>(string sql, Func<SqlDataReader, T> map, params SqlParameter[] parameters)
+        {
+            command = new SqlCommand(sql, sqlConnection);
+            command.Parameters.AddRange(parameters);
+            sqlConnection.Open();
+            reader = command.ExecuteReader();
+            
+                return map(reader);
+            
         }
     }
 }
