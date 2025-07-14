@@ -1,18 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StudentAttendanceSys.Models
+﻿namespace StudentAttendanceSys.Models
 {
-    public static class CurrentUser
+    public struct CurrentUser
     {
-        public static int User_ID { get; set; }
-        public static string User_Type { get; set; }
-        public static string User_Full_Name { get; set; }
+        public int UserId { get; }
+        public string UserType { get; }
+        public string FullName { get; }
 
+        public CurrentUser(int userId, string userType, string fullName)
+        {
+            UserId = userId;
+            UserType = userType;
+            FullName = fullName;
+        }
     }
 }
+
+
+
 
 // كلاس للاحتفاظ بابيانات المستخدم الحالي الذي قام بتسجيل الدخول

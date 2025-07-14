@@ -11,6 +11,7 @@ using StudentAttendanceSys.Utils;
 using StudentAttendanceSys.DataAccess;
 using StudentAttendanceSys.Models;
 using System.Data.SqlClient; //مؤقت للتجربه
+using StudentAttendanceSys.Services.Admin;
 
 namespace StudentAttendanceSys.Forms.LoginForm
 {
@@ -62,27 +63,11 @@ namespace StudentAttendanceSys.Forms.LoginForm
                 string name = userName.Text;
                 string pass = password.Text;
 
-                DbConnectionManager dbManager = new DbConnectionManager();
-
-                dbManager.Open();
-
-                string query = "SELECT User_ID, User_Type, User_Full_Name " +
-                               "FROM tbl_Users " +
-                               "WHERE User_Name=@username AND User_Password=@password";
-
-                SqlCommand command = new SqlCommand(query, dbManager.GetConnection());
-                command.Parameters.AddWithValue("@username", name);
-                command.Parameters.AddWithValue("@password", pass);
-
-                SqlDataReader reader = command.ExecuteReader();
-
-                if (reader.Read())
+                LoginService loginServise = new LoginService();
+   
+                 CurrentUser user = loginServise.Login(name, pass);
+                if(user.UserType != null)
                 {
-
-                    CurrentUser.User_ID = reader.GetInt32(0);
-                    CurrentUser.User_Type = reader.GetString(1);
-                    CurrentUser.User_Full_Name = reader.GetString(2);
-
                     loginSuccessful = true;
                     this.DialogResult = DialogResult.OK;
                     this.Close();
@@ -91,32 +76,6 @@ namespace StudentAttendanceSys.Forms.LoginForm
                 {
                     MessageBox.Show("❌ هناك خطأ في اسم المستخدم أو كلمة المرور");
                 }
-
-                reader.Close();
-                dbManager.Close();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             }
             else
