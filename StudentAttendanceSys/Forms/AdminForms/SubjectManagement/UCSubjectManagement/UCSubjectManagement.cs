@@ -34,8 +34,8 @@ namespace StudentAttendanceSys.Forms.AdminForms.SubjectManagement.UCSubjectManag
 
         private void deleteCurrentStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string studentName = "C++";
-            DialogResult deleteResult = MessageBox.Show("\nهل انت متاكد من حذف المادة" + "\n" + studentName,
+            string subjectName = "C++";
+            DialogResult deleteResult = MessageBox.Show("\nهل انت متاكد من حذف المادة" + "\n" + subjectName,
                 "تنبيه",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning,

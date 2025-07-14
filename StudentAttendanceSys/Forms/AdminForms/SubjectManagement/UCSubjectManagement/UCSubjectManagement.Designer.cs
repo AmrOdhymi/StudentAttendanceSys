@@ -31,18 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.SubjectListBoxSelect = new System.Windows.Forms.ListBox();
+            this.departmentListBoxSelect = new System.Windows.Forms.ListBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.SubjectSercheBox = new System.Windows.Forms.TextBox();
             this.SubjectDataGridView = new System.Windows.Forms.DataGridView();
-            this.SubjectContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.subjectContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.addNewStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editCurrentStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteCurrentStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SubjectDataGridView)).BeginInit();
-            this.SubjectContextMenuStrip.SuspendLayout();
+            this.subjectContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -57,7 +57,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.SubjectListBoxSelect);
+            this.groupBox5.Controls.Add(this.departmentListBoxSelect);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(140, 29);
             this.groupBox5.Name = "groupBox5";
@@ -67,15 +67,15 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "فلتره حسب القسم";
             // 
-            // SubjectListBoxSelect
+            // departmentListBoxSelect
             // 
-            this.SubjectListBoxSelect.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SubjectListBoxSelect.FormattingEnabled = true;
-            this.SubjectListBoxSelect.ItemHeight = 20;
-            this.SubjectListBoxSelect.Location = new System.Drawing.Point(3, 23);
-            this.SubjectListBoxSelect.Name = "SubjectListBoxSelect";
-            this.SubjectListBoxSelect.Size = new System.Drawing.Size(163, 38);
-            this.SubjectListBoxSelect.TabIndex = 0;
+            this.departmentListBoxSelect.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.departmentListBoxSelect.FormattingEnabled = true;
+            this.departmentListBoxSelect.ItemHeight = 20;
+            this.departmentListBoxSelect.Location = new System.Drawing.Point(3, 23);
+            this.departmentListBoxSelect.Name = "departmentListBoxSelect";
+            this.departmentListBoxSelect.Size = new System.Drawing.Size(163, 38);
+            this.departmentListBoxSelect.TabIndex = 0;
             // 
             // groupBox4
             // 
@@ -100,6 +100,7 @@
             // SubjectDataGridView
             // 
             this.SubjectDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SubjectDataGridView.ContextMenuStrip = this.subjectContextMenuStrip;
             this.SubjectDataGridView.Location = new System.Drawing.Point(0, 96);
             this.SubjectDataGridView.Name = "SubjectDataGridView";
             this.SubjectDataGridView.RowHeadersWidth = 51;
@@ -107,15 +108,15 @@
             this.SubjectDataGridView.Size = new System.Drawing.Size(792, 357);
             this.SubjectDataGridView.TabIndex = 6;
             // 
-            // SubjectContextMenuStrip
+            // subjectContextMenuStrip
             // 
-            this.SubjectContextMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.SubjectContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.subjectContextMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.subjectContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewStudentToolStripMenuItem,
             this.editCurrentStudentToolStripMenuItem,
             this.deleteCurrentStudentToolStripMenuItem});
-            this.SubjectContextMenuStrip.Name = "studentContextMenuStrip";
-            this.SubjectContextMenuStrip.Size = new System.Drawing.Size(228, 76);
+            this.subjectContextMenuStrip.Name = "studentContextMenuStrip";
+            this.subjectContextMenuStrip.Size = new System.Drawing.Size(228, 76);
             // 
             // addNewStudentToolStripMenuItem
             // 
@@ -143,7 +144,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ContextMenuStrip = this.SubjectContextMenuStrip;
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.SubjectDataGridView);
@@ -154,7 +154,7 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SubjectDataGridView)).EndInit();
-            this.SubjectContextMenuStrip.ResumeLayout(false);
+            this.subjectContextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,11 +164,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.ListBox SubjectListBoxSelect;
+        private System.Windows.Forms.ListBox departmentListBoxSelect;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox SubjectSercheBox;
         private System.Windows.Forms.DataGridView SubjectDataGridView;
-        private System.Windows.Forms.ContextMenuStrip SubjectContextMenuStrip;
+        private System.Windows.Forms.ContextMenuStrip subjectContextMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem addNewStudentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editCurrentStudentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteCurrentStudentToolStripMenuItem;

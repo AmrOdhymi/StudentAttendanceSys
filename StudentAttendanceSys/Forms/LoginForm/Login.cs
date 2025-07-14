@@ -30,13 +30,13 @@ namespace StudentAttendanceSys.Forms.LoginForm
             {
                 visibilityState = false;
                 password.PasswordChar = '*';
-                passwordVisibleStatus.Image = Image.FromFile("Icons//visibility_off.png");
+                passwordVisibleStatus.Image = Properties.Resources.visibility_off;
             }
             else if (!visibilityState)
             {
                 visibilityState = true;
                 password.PasswordChar = '\0';
-                passwordVisibleStatus.Image = Image.FromFile("Icons//visibility.png");
+                passwordVisibleStatus.Image =Properties.Resources.visibility;
             }
         }
 

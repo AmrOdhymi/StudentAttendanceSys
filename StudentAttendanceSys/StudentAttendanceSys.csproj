@@ -53,11 +53,35 @@
     <Compile Include="Forms\AdminForms\AdminDashboard\AdminDashboardForm.Designer.cs">
       <DependentUpon>AdminDashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AdminForms\DepartmentManagement\AddDepartmentForm\addDepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\DepartmentManagement\AddDepartmentForm\addDepartmentForm.Designer.cs">
+      <DependentUpon>addDepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminForms\DepartmentManagement\EditDepartmentForm\editDepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\DepartmentManagement\EditDepartmentForm\editDepartmentForm.Designer.cs">
+      <DependentUpon>editDepartmentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminForms\DepartmentManagement\UCDepartmentManagement\UCDepartmentManagement.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\AdminForms\DepartmentManagement\UCDepartmentManagement\UCDepartmentManagement.Designer.cs">
       <DependentUpon>UCDepartmentManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminForms\FacultyManagement\AddFacultyForm\addFacultyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\FacultyManagement\AddFacultyForm\addFacultyForm.Designer.cs">
+      <DependentUpon>addFacultyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminForms\FacultyManagement\EditFacultyForm\editFacultyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminForms\FacultyManagement\EditFacultyForm\editFacultyForm.Designer.cs">
+      <DependentUpon>editFacultyForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AdminForms\FacultyManagement\UCFaclutyManagement\UCFacultyManagement.cs">
       <SubType>UserControl</SubType>
@@ -127,8 +151,20 @@
     <EmbeddedResource Include="Forms\AdminForms\AdminDashboard\AdminDashboardForm.resx">
       <DependentUpon>AdminDashboardForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\DepartmentManagement\AddDepartmentForm\addDepartmentForm.resx">
+      <DependentUpon>addDepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\DepartmentManagement\EditDepartmentForm\editDepartmentForm.resx">
+      <DependentUpon>editDepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\DepartmentManagement\UCDepartmentManagement\UCDepartmentManagement.resx">
       <DependentUpon>UCDepartmentManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\FacultyManagement\AddFacultyForm\addFacultyForm.resx">
+      <DependentUpon>addFacultyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminForms\FacultyManagement\EditFacultyForm\editFacultyForm.resx">
+      <DependentUpon>editFacultyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminForms\FacultyManagement\UCFaclutyManagement\UCFacultyManagement.resx">
       <DependentUpon>UCFacultyManagement.cs</DependentUpon>
@@ -208,6 +244,7 @@
     <None Include="Resources\userName.png" />
     <None Include="Resources\password.png" />
     <None Include="Resources\visibility_off.png" />
+    <None Include="Resources\visibility.png" />
     <Content Include="Services\notes.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

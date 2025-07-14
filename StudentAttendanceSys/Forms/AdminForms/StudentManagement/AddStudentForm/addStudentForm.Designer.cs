@@ -36,7 +36,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.studentId = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.emile = new System.Windows.Forms.TextBox();
+            this.contact = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.departmentListBoxSelect = new System.Windows.Forms.ListBox();
             this.addStudentBtn = new System.Windows.Forms.Button();
@@ -106,7 +106,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.emile);
+            this.groupBox4.Controls.Add(this.contact);
             this.groupBox4.Location = new System.Drawing.Point(12, 131);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -115,13 +115,13 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "البريد الألكتروني او رقم الهاتف";
             // 
-            // emile
+            // contact
             // 
-            this.emile.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.emile.Location = new System.Drawing.Point(3, 23);
-            this.emile.Name = "emile";
-            this.emile.Size = new System.Drawing.Size(243, 27);
-            this.emile.TabIndex = 2;
+            this.contact.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contact.Location = new System.Drawing.Point(3, 23);
+            this.contact.Name = "contact";
+            this.contact.Size = new System.Drawing.Size(243, 27);
+            this.contact.TabIndex = 2;
             // 
             // groupBox5
             // 
@@ -196,7 +196,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox studentId;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox emile;
+        private System.Windows.Forms.TextBox contact;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.ListBox departmentListBoxSelect;
         private System.Windows.Forms.Button addStudentBtn;
