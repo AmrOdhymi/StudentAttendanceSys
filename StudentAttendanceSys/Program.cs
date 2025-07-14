@@ -8,6 +8,8 @@ using StudentAttendanceSys.Forms.AdminForms.AdminDashboard;
 using StudentAttendanceSys.Forms.FacultyForm.FacultyMainMenue;
 using StudentAttendanceSys.Models;
 using StudentAttendanceSys.Forms.FacultyForm.AttendanceForm;
+using StudentAttendanceSys.Forms.AdminForms.DepartmentManagement.AddDepartmentForm;
+
 
 namespace StudentAttendanceSys
 {
@@ -21,7 +23,7 @@ namespace StudentAttendanceSys
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AttendanceForm());
+            Application.Run(new addDepartmentForm());
 
             /*
                         Login login = new Login();
