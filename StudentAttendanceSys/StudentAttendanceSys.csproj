@@ -222,13 +222,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Database\NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="DataAccess\notes.txt" />
     <Content Include="Database\Script\Data.sql" />
     <Content Include="Database\Script\script.sql" />
+    <Content Include="Database\StoredProcedure\DepartmentService.sql" />
     <Content Include="Forms\AdminForms\DepartmentManagement\AddDepartmentForm\notes.txt" />
     <Content Include="Forms\AdminForms\DepartmentManagement\UCDepartmentManagement\notes.txt" />
     <Content Include="Forms\AdminForms\DepartmentManagement\EditDepartmentForm\notes.txt" />

@@ -69,7 +69,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.departmentID);
-            this.groupBox2.Location = new System.Drawing.Point(15, 18);
+            this.groupBox2.Location = new System.Drawing.Point(12, 18);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.groupBox2.Size = new System.Drawing.Size(249, 54);
