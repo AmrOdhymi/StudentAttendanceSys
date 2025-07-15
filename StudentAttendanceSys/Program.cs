@@ -23,7 +23,7 @@ namespace StudentAttendanceSys
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new addDepartmentForm());
+            Application.Run(new AdminDashboardForm());
 
             /*
                         Login login = new Login();
