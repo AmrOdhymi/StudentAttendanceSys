@@ -36,6 +36,8 @@ namespace StudentAttendanceSys.DataAccess
         {
             if (sqlConnection.State == ConnectionState.Open)
                 sqlConnection.Close();
+
+            reader.Close();
         }
 
 
@@ -53,7 +55,7 @@ namespace StudentAttendanceSys.DataAccess
             command = new SqlCommand(sql, sqlConnection);
 
             command.Parameters.AddRange(parameters);
-            sqlConnection.Open();
+            this.Open();
             command.ExecuteNonQuery();
 
         }
@@ -62,7 +64,7 @@ namespace StudentAttendanceSys.DataAccess
         {
             command = new SqlCommand(sql, sqlConnection);
             command.Parameters.AddRange(parameters);
-            sqlConnection.Open();
+            this.Open();
             reader = command.ExecuteReader();
             
                 return map(reader);
