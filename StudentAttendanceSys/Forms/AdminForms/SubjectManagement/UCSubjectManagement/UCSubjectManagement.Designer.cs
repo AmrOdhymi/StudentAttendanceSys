@@ -149,7 +149,7 @@
             this.Controls.Add(this.SubjectDataGridView);
             this.Controls.Add(this.label1);
             this.Name = "UCSubjectManagement";
-            this.Size = new System.Drawing.Size(792, 453);
+            this.Size = new System.Drawing.Size(792, 425);
             this.groupBox5.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();

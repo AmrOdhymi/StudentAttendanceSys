@@ -263,7 +263,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewStudents);
             this.Name = "UCStudentManagement";
-            this.Size = new System.Drawing.Size(792, 453);
+            this.Size = new System.Drawing.Size(792, 425);
             this.Load += new System.EventHandler(this.UCStudentManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewStudents)).EndInit();
             this.studentContextMenuStrip.ResumeLayout(false);

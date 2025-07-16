@@ -38,7 +38,7 @@ namespace StudentAttendanceSys
                             }
                             else if (login.user.UserType == "Admin")
                             {
-                                Application.Run(new AdminDashboardForm());
+                                Application.Run(new AdminDashboardForm(login.user.FullName));
                             }
 
                         }

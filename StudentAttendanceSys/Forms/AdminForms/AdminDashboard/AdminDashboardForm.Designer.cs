@@ -37,9 +37,11 @@
             this.departmentMUCBtn = new System.Windows.Forms.Button();
             this.facultyMUCBtn = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.adminStatusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.userNamrToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.sideMenu.SuspendLayout();
-            this.panelContainer.SuspendLayout();
+            this.adminStatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // sideMenu
@@ -144,27 +146,42 @@
             // panelContainer
             // 
             this.panelContainer.BackColor = System.Drawing.Color.White;
-            this.panelContainer.Controls.Add(this.statusStrip1);
-            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelContainer.Location = new System.Drawing.Point(0, 0);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(792, 453);
+            this.panelContainer.Size = new System.Drawing.Size(792, 425);
             this.panelContainer.TabIndex = 1;
             // 
-            // statusStrip1
+            // adminStatusStrip
             // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Location = new System.Drawing.Point(0, 431);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(792, 22);
-            this.statusStrip1.TabIndex = 0;
-            this.statusStrip1.Text = "statusStrip1";
+            this.adminStatusStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.adminStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.userNamrToolStripStatusLabel});
+            this.adminStatusStrip.Location = new System.Drawing.Point(0, 427);
+            this.adminStatusStrip.Name = "adminStatusStrip";
+            this.adminStatusStrip.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.adminStatusStrip.Size = new System.Drawing.Size(792, 26);
+            this.adminStatusStrip.TabIndex = 2;
+            this.adminStatusStrip.Text = "adminStatusStrip";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(115, 20);
+            this.toolStripStatusLabel1.Text = "أسم المستخدم / ";
+            // 
+            // userNamrToolStripStatusLabel
+            // 
+            this.userNamrToolStripStatusLabel.Name = "userNamrToolStripStatusLabel";
+            this.userNamrToolStripStatusLabel.Size = new System.Drawing.Size(0, 20);
             // 
             // AdminDashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 453);
+            this.Controls.Add(this.adminStatusStrip);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.sideMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -174,9 +191,10 @@
             this.Text = "AdminDashboardForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminDashboardForm_FormClosing);
             this.sideMenu.ResumeLayout(false);
-            this.panelContainer.ResumeLayout(false);
-            this.panelContainer.PerformLayout();
+            this.adminStatusStrip.ResumeLayout(false);
+            this.adminStatusStrip.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -191,6 +209,8 @@
         private System.Windows.Forms.Button departmentMUCBtn;
         private System.Windows.Forms.Button facultyMUCBtn;
         private System.Windows.Forms.Panel panelContainer;
-        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.StatusStrip adminStatusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel userNamrToolStripStatusLabel;
     }
 }

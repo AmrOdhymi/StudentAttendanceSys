@@ -17,9 +17,10 @@ namespace StudentAttendanceSys.Forms.AdminForms.AdminDashboard
 {
     public partial class AdminDashboardForm : Form
     {
-        public AdminDashboardForm()
+        public AdminDashboardForm(string userName)
         {
             InitializeComponent();
+            userNamrToolStripStatusLabel.Text = userName;
         }
 
         private void studentMUCBtn_Click(object sender, EventArgs e)

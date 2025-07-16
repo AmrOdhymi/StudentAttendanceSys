@@ -34,11 +34,11 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.departmentListBoxSelect = new System.Windows.Forms.ListBox();
             this.facultyDataGridView = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.fasultyContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.addNewStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editCurrentStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteCurrentStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.facultyDataGridView)).BeginInit();
@@ -98,16 +98,6 @@
             this.facultyDataGridView.Size = new System.Drawing.Size(792, 357);
             this.facultyDataGridView.TabIndex = 7;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(303, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 20);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Faculty Management";
-            // 
             // fasultyContextMenuStrip
             // 
             this.fasultyContextMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -139,6 +129,16 @@
             this.deleteCurrentStudentToolStripMenuItem.Text = "Delete Current Fasulty";
             this.deleteCurrentStudentToolStripMenuItem.Click += new System.EventHandler(this.deleteCurrentStudentToolStripMenuItem_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(303, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(182, 20);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Faculty Management";
+            // 
             // UCFacultyManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -149,7 +149,7 @@
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Name = "UCFacultyManagement";
-            this.Size = new System.Drawing.Size(792, 453);
+            this.Size = new System.Drawing.Size(792, 425);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);

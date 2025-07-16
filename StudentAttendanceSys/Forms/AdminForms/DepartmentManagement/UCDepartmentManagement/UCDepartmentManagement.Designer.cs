@@ -118,11 +118,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.departmentDataGridView);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label1);
             this.Name = "UCDepartmentManagement";
-            this.Size = new System.Drawing.Size(792, 453);
+            this.Size = new System.Drawing.Size(792, 425);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.departmentDataGridView)).EndInit();
