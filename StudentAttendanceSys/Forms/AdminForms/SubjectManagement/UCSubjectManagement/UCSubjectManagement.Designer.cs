@@ -96,9 +96,12 @@
             this.SubjectSercheBox.Name = "SubjectSercheBox";
             this.SubjectSercheBox.Size = new System.Drawing.Size(355, 27);
             this.SubjectSercheBox.TabIndex = 3;
+            this.SubjectSercheBox.TextChanged += new System.EventHandler(this.SubjectSercheBox_TextChanged);
             // 
             // SubjectDataGridView
             // 
+            this.SubjectDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.SubjectDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.SubjectDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SubjectDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.SubjectDataGridView.ContextMenuStrip = this.subjectContextMenuStrip;
