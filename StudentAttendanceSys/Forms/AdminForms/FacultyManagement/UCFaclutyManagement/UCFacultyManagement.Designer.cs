@@ -89,13 +89,14 @@
             // 
             // facultyDataGridView
             // 
+            this.facultyDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.facultyDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.facultyDataGridView.ContextMenuStrip = this.fasultyContextMenuStrip;
             this.facultyDataGridView.Location = new System.Drawing.Point(0, 96);
             this.facultyDataGridView.Name = "facultyDataGridView";
             this.facultyDataGridView.RowHeadersWidth = 51;
             this.facultyDataGridView.RowTemplate.Height = 24;
-            this.facultyDataGridView.Size = new System.Drawing.Size(792, 357);
+            this.facultyDataGridView.Size = new System.Drawing.Size(792, 329);
             this.facultyDataGridView.TabIndex = 7;
             // 
             // fasultyContextMenuStrip

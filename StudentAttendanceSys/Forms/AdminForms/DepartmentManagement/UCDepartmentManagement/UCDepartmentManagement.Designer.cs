@@ -74,13 +74,14 @@
             // 
             // departmentDataGridView
             // 
+            this.departmentDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.departmentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.departmentDataGridView.ContextMenuStrip = this.departmentContextMenuStrip;
             this.departmentDataGridView.Location = new System.Drawing.Point(0, 96);
             this.departmentDataGridView.Name = "departmentDataGridView";
             this.departmentDataGridView.RowHeadersWidth = 51;
             this.departmentDataGridView.RowTemplate.Height = 24;
-            this.departmentDataGridView.Size = new System.Drawing.Size(792, 357);
+            this.departmentDataGridView.Size = new System.Drawing.Size(792, 329);
             this.departmentDataGridView.TabIndex = 9;
             // 
             // departmentContextMenuStrip

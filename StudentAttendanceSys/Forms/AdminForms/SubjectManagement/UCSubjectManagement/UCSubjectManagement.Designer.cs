@@ -99,13 +99,14 @@
             // 
             // SubjectDataGridView
             // 
+            this.SubjectDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SubjectDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.SubjectDataGridView.ContextMenuStrip = this.subjectContextMenuStrip;
             this.SubjectDataGridView.Location = new System.Drawing.Point(0, 96);
             this.SubjectDataGridView.Name = "SubjectDataGridView";
             this.SubjectDataGridView.RowHeadersWidth = 51;
             this.SubjectDataGridView.RowTemplate.Height = 24;
-            this.SubjectDataGridView.Size = new System.Drawing.Size(792, 357);
+            this.SubjectDataGridView.Size = new System.Drawing.Size(792, 329);
             this.SubjectDataGridView.TabIndex = 6;
             // 
             // subjectContextMenuStrip

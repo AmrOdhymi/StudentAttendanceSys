@@ -176,13 +176,14 @@
             // 
             // studentDataGridView
             // 
+            this.studentDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.studentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.studentDataGridView.ContextMenuStrip = this.studentContextMenuStrip;
             this.studentDataGridView.Location = new System.Drawing.Point(0, 96);
             this.studentDataGridView.Name = "studentDataGridView";
             this.studentDataGridView.RowHeadersWidth = 51;
             this.studentDataGridView.RowTemplate.Height = 24;
-            this.studentDataGridView.Size = new System.Drawing.Size(792, 357);
+            this.studentDataGridView.Size = new System.Drawing.Size(792, 329);
             this.studentDataGridView.TabIndex = 1;
             // 
             // groupBox4

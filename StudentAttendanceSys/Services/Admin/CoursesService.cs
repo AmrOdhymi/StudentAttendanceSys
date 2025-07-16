@@ -82,10 +82,10 @@ namespace StudentAttendanceSys.Services.Admin
                 return false;
             }
         }
-        public course getCourseById(int courseID)        
+        public Course getCourseById(int courseID)        
         {
             string query = "SELECT c.Course_ID, c.Course_Name,c.Course_code,c.User_ID,cd.Department_ID FROM dbo.tbl_Course c INNER JOIN dbo.tbl_Course_Department cd ON c.Course_ID = cd.Course_ID WHERE c.Course_ID=@Course_ID; ";
-            course result= new course(0,null,null,0,0);
+            Course result= new Course(0,null,null,0,0);
             try
             {
                 var param = new SqlParameter("@Course_ID", SqlDbType.Int) { Value = courseID };
@@ -94,7 +94,7 @@ namespace StudentAttendanceSys.Services.Admin
                 {
                     if (reader.Read())
                     {
-                        return new course(
+                        return new Course(
                              (int)reader["Course_ID"],
                              (string)reader["Course_Name"],
                              (string)reader["Course_code"],
@@ -111,19 +111,19 @@ namespace StudentAttendanceSys.Services.Admin
                 return result;
             }
         }
-        public List<course> getAllCourses()
+        public List<Course> getAllCourses()
         {
             string query = "SELECT c.Course_ID, c.Course_Name, c.Course_code, c.User_ID, cd.Department_ID FROM dbo.tbl_Course c INNER JOIN dbo.tbl_Course_Department cd ON c.Course_ID = cd.Course_ID;";
-            List<course> result = new List<course>();
+            List<Course> result = new List<Course>();
 
             try
             {
                 return _db.ExecuteReader(query, reader =>
                 {
-                    List<course> list = new List<course>();
+                    List<Course> list = new List<Course>();
                     while (reader.Read())
                     {
-                        list.Add(new course(
+                        list.Add(new Course(
                             (int)reader["Course_ID"],
                             (string)reader["Course_Name"],
                             (string)reader["Course_code"],
@@ -136,7 +136,7 @@ namespace StudentAttendanceSys.Services.Admin
             catch (Exception ex)
             {
                 // Log the exception
-                return new List<course>();
+                return new List<Course>();
             }
         }
 

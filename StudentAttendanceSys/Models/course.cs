@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentAttendanceSys.Models
 {
-    public struct course
+    public struct Course
     {
         public int CourseId { get; }
         public string CourseName { get; }
@@ -14,7 +14,7 @@ namespace StudentAttendanceSys.Models
         public int DoctorId { get; }
         public int DepartmentId { get; }
 
-        public course(int courseId, string courseName, string courseCode, int doctorId, int departmentId)
+        public Course(int courseId, string courseName, string courseCode, int doctorId, int departmentId)
         {
             CourseId = courseId;
             CourseName = courseName;
