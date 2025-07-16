@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentAttendanceSys.Forms.AdminForms.SubjectManagement.AddSubjectForm;
 using StudentAttendanceSys.Forms.AdminForms.SubjectManagement.EditSubjectForm;
+using StudentAttendanceSys.Services.Admin;
 
 
 namespace StudentAttendanceSys.Forms.AdminForms.SubjectManagement.UCSubjectManagement
@@ -18,6 +19,8 @@ namespace StudentAttendanceSys.Forms.AdminForms.SubjectManagement.UCSubjectManag
         public UCSubjectManagement()
         {
             InitializeComponent();
+            CoursesService course = new CoursesService();
+            SubjectDataGridView.DataSource= course.getAllCourses();
         }
 
         private void addNewStudentToolStripMenuItem_Click(object sender, EventArgs e)

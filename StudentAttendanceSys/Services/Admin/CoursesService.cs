@@ -84,11 +84,11 @@ namespace StudentAttendanceSys.Services.Admin
         }
         public course getCourseById(int courseID)        
         {
-            string query = "";
+            string query = "SELECT c.Course_ID, c.Course_Name,c.Course_code,c.User_ID,cd.Department_ID FROM dbo.tbl_Course c INNER JOIN dbo.tbl_Course_Department cd ON c.Course_ID = cd.Course_ID WHERE c.Course_ID=@Course_ID; ";
             course result= new course(0,null,null,0,0);
             try
             {
-                var param = new SqlParameter("@username", SqlDbType.Int) { Value = courseID };
+                var param = new SqlParameter("@Course_ID", SqlDbType.Int) { Value = courseID };
 
                 result = _db.ExecuteReader(query, reader =>
                 {
@@ -111,5 +111,37 @@ namespace StudentAttendanceSys.Services.Admin
                 return result;
             }
         }
+        public List<course> getAllCourses()
+        {
+            string query = "SELECT c.Course_ID, c.Course_Name, c.Course_code, c.User_ID, cd.Department_ID FROM dbo.tbl_Course c INNER JOIN dbo.tbl_Course_Department cd ON c.Course_ID = cd.Course_ID;";
+            List<course> result = new List<course>();
+
+            try
+            {
+                return _db.ExecuteReader(query, reader =>
+                {
+                    List<course> list = new List<course>();
+                    while (reader.Read())
+                    {
+                        list.Add(new course(
+                            (int)reader["Course_ID"],
+                            (string)reader["Course_Name"],
+                            (string)reader["Course_code"],
+                            (int)reader["User_ID"],
+                            (int)reader["Department_ID"]));
+                    }
+                    return list;
+                });
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return new List<course>();
+            }
+        }
+
+
+
     }
 }
+
