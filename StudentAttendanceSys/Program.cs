@@ -23,26 +23,26 @@ namespace StudentAttendanceSys
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminDashboardForm());
+           // Application.Run(new AdminDashboardForm());
 
-            /*
+            
                         Login login = new Login();
                         DialogResult result = login.ShowDialog();
 
                         if (result == DialogResult.OK)
                         {
 
-                            if (CurrentUser.User_Type == "Doctor")
+                            if (login.user.UserType == "Doctor")
                             {
                                 Application.Run(new FacultyMainMenueForm());
                             }
-                            else if (CurrentUser.User_Type == "Admin")
+                            else if (login.user.UserType == "Admin")
                             {
                                 Application.Run(new AdminDashboardForm());
                             }
 
                         }
-            */
+            
         }
     }
 }

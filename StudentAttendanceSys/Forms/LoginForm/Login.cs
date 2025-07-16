@@ -8,9 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StudentAttendanceSys.Utils;
-using StudentAttendanceSys.DataAccess;
 using StudentAttendanceSys.Models;
-using System.Data.SqlClient; //مؤقت للتجربه
 using StudentAttendanceSys.Services.Admin;
 
 namespace StudentAttendanceSys.Forms.LoginForm
@@ -19,6 +17,7 @@ namespace StudentAttendanceSys.Forms.LoginForm
     {
         Boolean loginSuccessful = false;
         Boolean visibilityState = false;
+        public CurrentUser user;
         public Login()
         {
             InitializeComponent();
@@ -45,27 +44,12 @@ namespace StudentAttendanceSys.Forms.LoginForm
         {
             if (ValidationService.CheckIsEmpty(userName.Text) && ValidationService.CheckIsEmpty(password.Text))
             {
-
-
-
-                // مؤقت للتجربه الى يتم إنشاء دوال الاستعلام
-
-
-                // للتجربه قم بانشاء اثنين مستخدمين الاول مدير واثاني دكتور
-                //عند تسجيل الدخول كادكتور يفتح تلقائيا نافذة الدكتور
-                //وعند تسجيل الدخول كامدير يفتح تلقائيا واجهة المدير
-
-
-
-
-
-
                 string name = userName.Text;
                 string pass = password.Text;
 
                 LoginService loginServise = new LoginService();
    
-                 CurrentUser user = loginServise.Login(name, pass);
+                 user = loginServise.Login(name, pass);
                 if(user.UserType != null)
                 {
                     loginSuccessful = true;
